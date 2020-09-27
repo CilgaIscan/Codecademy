@@ -7,5 +7,5 @@ Codecademy Web Development Path projects and challenges
 
 ### Section 6
 - [Chore Door](section-6/projects/chore-door)
-- [Musicon](section-6/projects/piano-keys)
+- [Piona Keys](section-6/projects/piano-keys)
 - [Musicon](section-6/projects/musicon)
