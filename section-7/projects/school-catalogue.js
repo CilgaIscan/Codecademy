@@ -1,10 +1,10 @@
 // Create school parent class.
 class School {
     // Constructor for name, level and number of students.
-    constructor(name, level, number){
+    constructor(name, level, numberOfStudents){
         this._name = name;
         this._level = level;
-        this._number = number
+        this._numberOfStudents = numberOfStudents;
     }
 
     // Getters for name, level and number of students.
@@ -14,14 +14,14 @@ class School {
     get level() {
         return this._level;
     }
-    get number() {
-        return this._number;
+    get numberOfStudents() {
+        return this._numberOfStudents;
     }
 
     // Setter for number of students.
-    set number(arg) {
+    set numberOfStudents(arg) {
         if(typeof arg === 'number'){
-            this._number = arg;
+            this._numberOfStudents = arg;
         } else{
             console.log('Invalid input: numberOfStudents must be set to a Number.')
         }
@@ -29,7 +29,7 @@ class School {
 
     // Create quckFacts method.
     quickFacts() {
-        console.log(`${this._name} educates ${this._number} students at the ${this._level} school level`);
+        console.log(`${this._name} educates ${this._numberOfStudents} students at the ${this._level} school level`);
     }
 
     // Create pickSubstituteTeacher static method.
@@ -43,15 +43,12 @@ class School {
 // Create Primary School class.
 class PrimarySchool extends School{
     // Constructor for PrimarySchool.
-    constructor(name, number, pickUpPolicy) {
-        super('primary');
-        this._name = name;
-        this._number = number;
-        this._level = 'primary'
+    constructor(name, numberOfStudents, pickUpPolicy) {
+        super(name, 'primary', numberOfStudents);
         this._pickUpPolicy = pickUpPolicy;
     }
 
-    // Getter for pichUpPolicy.
+    // Getter for pickUpPolicy.
     get pickUpPolicy() {
         return this._pickUpPolicy;
     }
@@ -60,11 +57,8 @@ class PrimarySchool extends School{
 // Create High School class.
 class HighSchool extends School {
     // Constructor for HighSchool.
-    constructor(name, number, sportsTeam) {
-        super('high');
-        this._name = name;
-        this._number = number;
-        this._level = 'high'
+    constructor(name, numberOfStudents, sportsTeam) {
+        super(name, 'high', numberOfStudents);
         this._sportsTeam = sportsTeam;
     }
 
