@@ -7,7 +7,7 @@ body{
 .title{
     font-size: 36px;
     margin-top: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding: 0;
     color: #141c3a;
     text-transform: uppercase;
@@ -47,7 +47,7 @@ body{
     color: white;
     position: absolute;
     margin-left: -12px;
-    padding: 0px;
+    padding: 0;
 }
 .keynote{
     width: 20px;

@@ -27,7 +27,7 @@ class School {
         }
     }
 
-    // Create quckFacts method.
+    // Create quickFacts method.
     quickFacts() {
         console.log(`${this._name} educates ${this._numberOfStudents} students at the ${this._level} school level`);
     }

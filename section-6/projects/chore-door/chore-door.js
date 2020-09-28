@@ -19,7 +19,7 @@ let openDoor3;
 
 // Declare isClicked function.
 const isClicked = (door) => {
-    if (door.src == closedDoorPath) {
+    if (door.src === closedDoorPath) {
         return false;
     } else {
         return true;
